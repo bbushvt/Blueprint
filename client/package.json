@@ -15,8 +15,7 @@
     "format:staged": "prettier --write",
     "start": "cross-env NODE_ENV=development PORT=3000 craco start",
     "test": "craco test --verbose a",
-    "electron:start": "concurrently -k \"cross-env BROWSER=none npm run start\" \"wait-on http://localhost:3000 && electron .\"",
-    "electron": "electron ."
+    "electron:start": "concurrently -k \"cross-env BROWSER=none npm run start\" \"wait-on http://localhost:3000 && electron .\""
   },
   "dependencies": {
     "@apollo/client": "^3.4.10",
